@@ -1,0 +1,87 @@
+{
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "tokudata:installed/ultracraft"
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "feet": {
+                  "items": "ultracraft:photoelectron_tube",
+            "predicates": {
+              "minecraft:custom_data": {
+                "Update_form": false
+              }
+            }
+                }
+              }
+            }
+          }
+        ],
+        "items": [
+          {
+            "items": "ultracraft:photoelectron_tube",
+            "predicates": {
+              "minecraft:custom_data": {
+                "Update_form": false
+              }
+            }
+          }
+        ]
+      }
+    },
+    "2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "tokudata:installed/ultracraft"
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "feet": {
+                  "items": "ultracraft:esplender",
+            "predicates": {
+              "minecraft:custom_data": {
+                "Update_form": false
+              }
+            }
+                }
+              }
+            }
+          }
+        ],
+        "items": [
+          {
+            "items": "ultracraft:esplender",
+            "predicates": {
+              "minecraft:custom_data": {
+                "Update_form": false
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "1",
+      "2"
+    ]
+  ],
+  "rewards": {
+    "function": "tokudata:transform/ultra/heisei/gaia"
+  }
+}

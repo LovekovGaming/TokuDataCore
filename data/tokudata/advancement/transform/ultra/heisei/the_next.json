@@ -1,0 +1,44 @@
+{
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "tokudata:installed/ultracraft"
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "feet": {
+                  "items": "ultracraft:energy_core",
+            "predicates": {
+              "minecraft:custom_data": {
+                "Update_form": false
+              }
+            }
+                }
+              }
+            }
+          }
+        ],
+        "items": [
+          {
+            "items": "ultracraft:energy_core",
+            "predicates": {
+              "minecraft:custom_data": {
+                "Update_form": false
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "tokudata:transform/ultra/heisei/the_next"
+  }
+}
