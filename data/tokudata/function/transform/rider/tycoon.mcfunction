@@ -109,7 +109,6 @@ execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex3:"kamenr
 execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex3:"kamenridercraft:powered_builder_raise_buckle_geats"}] run scoreboard players set @s toku.form3 30
 execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex3:"kamenridercraft:command_twin_buckle_jet"}] run scoreboard players set @s toku.form3 32
 execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex3:"kamenridercraft:command_twin_buckle_cannon_l"}] run scoreboard players set @s toku.form3 33
-execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex3:"kamenridercraft:boost_mkii_raise_buckle"}] run scoreboard players set @s toku.form3 35
 execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex3:"kamenridercraft:bujin_sword_raise_buckle"}] run scoreboard players set @s toku.form3 37
 execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex3:"kamenridercraft:revice_driver_raise_buckle_geats"}] run scoreboard players set @s toku.form3 39
 execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex3:"kamenridercraft:two_si_driver_raise_buckle"}] run scoreboard players set @s toku.form3 40
