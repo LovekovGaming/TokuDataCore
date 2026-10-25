@@ -17,7 +17,7 @@ execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenr
 execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_11"}] run scoreboard players set @s toku.form1 10
 # execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_12"}] run scoreboard players set @s toku.form1 11
 # execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_1_origin"}] run scoreboard players set @s toku.form1 12
-# execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_1_maou"}] run scoreboard players set @s toku.form1 13
+execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_1_en_my_th"}] run scoreboard players set @s toku.form1 13
 # execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:upgrade_form"}] run scoreboard players set @s toku.form1 14
 # execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:super_form"}] run scoreboard players set @s toku.form1 15
 # execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:final_form"}] run scoreboard players set @s toku.form1 16
