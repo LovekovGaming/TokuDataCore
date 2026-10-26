@@ -21,6 +21,7 @@ execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenr
 execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:impact_capsem_shock"}] run scoreboard players set @s toku.form1 14
 execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:zeztz_and_code_zeroider_capsem"}] run scoreboard players set @s toku.form1 15
 execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:charge_capsem"}] run scoreboard players set @s toku.form1 16
+execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:advance_capsem"}] run scoreboard players set @s toku.form1 17
 scoreboard players operation Form_Difference toku.form1 -= @s toku.form1
 function #tokudata:post_check/rider/zeztz
 advancement grant @s only tokudata:hooks/transform
