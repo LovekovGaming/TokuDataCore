@@ -15,7 +15,7 @@
               "nbt": "{attributes:[{base:30.0d,id:\"kamenridercraft:is_transforming\"}]}",
               "equipment": {
                 "feet": {
-			  "items": "#tokudata:item_alias/another_arcle"
+			  "items": "kamenridercraft:another_arcle"
                 }
               }
             }
@@ -23,7 +23,7 @@
         ],
         "items": [
 		  {
-			"items": "#tokudata:item_alias/another_arcle"
+			"items": "kamenridercraft:another_arcle"
 		  }
 		]
 	  }
