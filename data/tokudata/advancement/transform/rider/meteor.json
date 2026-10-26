@@ -12,7 +12,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "nbt": "{attributes:[{base:30.0d,id:\"kamenridercraft:is_transforming\"}]}",
+              "nbt": "{attributes:[{base:35.0d,id:\"kamenridercraft:is_transforming\"}]}",
               "equipment": {
                 "feet": {
 			  "items": "kamenridercraft:meteor_driver"
