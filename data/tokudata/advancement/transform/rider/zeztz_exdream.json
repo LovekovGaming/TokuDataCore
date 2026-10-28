@@ -43,7 +43,7 @@
               "nbt": "{attributes:[{base:200.0d,id:\"kamenridercraft:is_transforming\"}]}",
               "equipment": {
                 "feet": {
-			  "items": "kamenridercraft:zeztz_driver"
+			  "items": "kamenridercraft:zeztz_exdream_driver"
                 }
               }
             }
@@ -51,7 +51,7 @@
         ],
         "items": [
 		  {
-			"items": "kamenridercraft:zeztz_driver"
+			"items": "kamenridercraft:zeztz_exdream_driver"
 		  }
 		]
 	  }
