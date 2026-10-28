@@ -6,9 +6,9 @@ execute unless data entity @s Inventory[{Slot:100b}].components.minecraft:custom
 scoreboard players operation Form_Difference toku.form1 = @s toku.form1
 execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_1"}] run scoreboard players set @s toku.form1 0
 # execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_2"}] run scoreboard players set @s toku.form1 1
-# execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_3"}] run scoreboard players set @s toku.form1 2
+execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_3"}] run scoreboard players set @s toku.form1 2
 execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_4"}] run scoreboard players set @s toku.form1 3
-# execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_5"}] run scoreboard players set @s toku.form1 4
+execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_5"}] run scoreboard players set @s toku.form1 4
 # execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_6"}] run scoreboard players set @s toku.form1 5
 # execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_7"}] run scoreboard players set @s toku.form1 6
 execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_8"}] run scoreboard players set @s toku.form1 7
