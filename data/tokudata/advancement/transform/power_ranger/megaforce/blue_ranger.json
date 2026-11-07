@@ -1,0 +1,44 @@
+{
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "tokudata:installed/powerrangerscraft"
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "tokudata:power_ranger/neo_saban/megaforce_armor"
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "feet": {
+                  "items": "powerrangerscraft:blue_gosei_morpher",
+            "predicates": {
+              "minecraft:custom_data": "{is_transforming:119.0d}"
+            }
+                }
+              }
+            }
+          }
+        ],
+        "items": [
+          {
+            "items": "powerrangerscraft:blue_gosei_morpher",
+            "predicates": {
+              "minecraft:custom_data": "{is_transforming:119.0d}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "tokudata:transform/power_ranger/megaforce/blue_ranger"
+  }
+}
