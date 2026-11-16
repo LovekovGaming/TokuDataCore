@@ -1,68 +1,45 @@
 {
   "criteria": {
-	"1": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
+    "1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
         "player": [
           {
             "condition": "minecraft:reference",
             "name": "tokudata:installed/kamenridercraft"
           },
-		  {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "nbt": "{attributes:[{base:30.0d,id:\"kamenridercraft:is_transforming\"}]}",
-              "equipment": {
-                "feet": {
-			  "items": "kamenridercraft:arcle"
-                }
-              }
-            }
-          }
-        ],
-        "items": [
-		  {
-			"items": "kamenridercraft:arcle"
-		  }
-		]
-	  }
-	},
-	"2": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": [
           {
-            "condition": "minecraft:reference",
-            "name": "tokudata:installed/kamenridercraft"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "tokudata:rider/detransformed"
+            }
           },
-		  {
+          {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "nbt": "{attributes:[{base:35.0d,id:\"kamenridercraft:is_transforming\"}]}",
               "equipment": {
                 "feet": {
-			  "items": "kamenridercraft:arcle"
+                  "items": "kamenridercraft:arcle",
+                  "predicates": {
+                    "minecraft:custom_data": "{Update_form:1b}"
+                  }
                 }
               }
             }
           }
         ],
         "items": [
-		  {
-			"items": "kamenridercraft:arcle"
-		  }
-		]
-	  }
-	}
+          {
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
   },
-  "requirements": [
-	[
-	  "1",
-	  "2"
-	]
-  ],
   "rewards": {
 	"function": "tokudata:transform/rider/kuuga"
   }

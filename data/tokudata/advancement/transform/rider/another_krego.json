@@ -8,24 +8,35 @@
             "condition": "minecraft:reference",
             "name": "tokudata:installed/kamenridercraft"
           },
-		  {
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "tokudata:rider/detransformed"
+            }
+          },
+          {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "nbt": "{attributes:[{base:30.0d,id:\"kamenridercraft:is_transforming\"}]}",
               "equipment": {
                 "feet": {
-			  "items": "#tokudata:item_alias/another_krego_belt"
+			  "items": "#tokudata:item_alias/another_krego_belt",
+                  "predicates": {
+                    "minecraft:custom_data": "{Update_form:1b}"
+                  }
                 }
               }
             }
           }
         ],
         "items": [
-		  {
-			"items": "#tokudata:item_alias/another_krego_belt"
-		  }
-		]
+          {
+            "count": {
+              "min": 1
+            }
+          }
+        ]
 	  }
 	}
   },

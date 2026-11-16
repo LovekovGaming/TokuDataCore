@@ -8,29 +8,40 @@
             "condition": "minecraft:reference",
             "name": "tokudata:installed/kamenridercraft"
           },
-		  {
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "tokudata:rider/detransformed"
+            }
+          },
+          {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "nbt": "{attributes:[{base:30.0d,id:\"kamenridercraft:is_transforming\"}]}",
               "equipment": {
                 "feet": {
-			  "items": "kamenridercraft:desire_driver_keibi_riders"
+			  "items": "kamenridercraft:desire_driver_keibi_riders",
+                  "predicates": {
+                    "minecraft:custom_data": "{Update_form:1b}"
+                  }
                 }
               }
             }
           }
         ],
         "items": [
-		  {
-			"items": "kamenridercraft:desire_driver_keibi_riders"
-		  }
-		]
-	  }
-	}
+          {
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
   },
   "rewards": {
-	  "function": "tokudata:transform/rider/keibi_rider"
+    "function": "tokudata:transform/rider/keibi_rider"
 	}
   }
   

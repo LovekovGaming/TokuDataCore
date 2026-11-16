@@ -1,69 +1,46 @@
 {
   "criteria": {
-	"1": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
+    "1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
         "player": [
           {
             "condition": "minecraft:reference",
             "name": "tokudata:installed/kamenridercraft"
           },
-		  {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "nbt": "{attributes:[{base:30.0d,id:\"kamenridercraft:is_transforming\"}]}",
-              "equipment": {
-                "feet": {
-			  "items": "kamenridercraft:zeztz_driver"
-                }
-              }
-            }
-          }
-        ],
-        "items": [
-		  {
-			"items": "kamenridercraft:zeztz_driver"
-		  }
-		]
-	  }
-	},
-	"2": {
-	  "trigger": "minecraft:inventory_changed",
-	  "conditions": {
-		"player": [
           {
-            "condition": "minecraft:reference",
-            "name": "tokudata:installed/kamenridercraft"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "tokudata:rider/detransformed"
+            }
           },
-		  {
+          {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "nbt": "{attributes:[{base:200.0d,id:\"kamenridercraft:is_transforming\"}]}",
               "equipment": {
                 "feet": {
-			  "items": "kamenridercraft:zeztz_driver"
+                  "items": "kamenridercraft:zeztz_driver",
+                  "predicates": {
+                    "minecraft:custom_data": "{Update_form:1b}"
+                  }
                 }
               }
             }
           }
         ],
         "items": [
-		  {
-			"items": "kamenridercraft:zeztz_driver"
-		  }
-		]
-	  }
-	}
+          {
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
   },
-  "requirements": [
-	[
-	  "1",
-	  "2"
-	]
-  ],
   "rewards": {
-	"function": "tokudata:transform/rider/zeztz"
+    "function": "tokudata:transform/rider/zeztz"
   }
 }

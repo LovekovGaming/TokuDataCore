@@ -8,26 +8,37 @@
             "condition": "minecraft:reference",
             "name": "tokudata:installed/kamenridercraft"
           },
-		  {
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "tokudata:rider/detransformed"
+            }
+          },
+          {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "nbt": "{attributes:[{base:30.0d,id:\"kamenridercraft:is_transforming\"}]}",
               "equipment": {
                 "feet": {
-			  "items": "kamenridercraft:ank_point_burning"
+			  "items": "kamenridercraft:ank_point_burning",
+                  "predicates": {
+                    "minecraft:custom_data": "{Update_form:1b}"
+                  }
                 }
               }
             }
           }
         ],
         "items": [
-		  {
-			"items": "kamenridercraft:ank_point_burning"
-		  }
-		]
-	  }
-	}
+          {
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
   },
   "rewards": {
 	"function": "tokudata:transform/rider/another_agito_kouji_majima"
