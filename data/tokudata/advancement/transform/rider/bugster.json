@@ -41,6 +41,6 @@
     }
   },
   "rewards": {
-	"function": "tokudata:transform/rider/graphite_bugster"
+	"function": "tokudata:transform/rider/bugster"
   }
 }
