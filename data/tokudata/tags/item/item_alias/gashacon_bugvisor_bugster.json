@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "kamenridercraft:gashacon_bugvisor_graphite",
+      "required": false
+    },
+    {
+      "id": "kamenridercraft:gashacon_bugvisor_bugster",
+      "required": false
+    }
+  ]
+}

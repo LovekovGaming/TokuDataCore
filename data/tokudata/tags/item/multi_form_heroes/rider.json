@@ -147,7 +147,7 @@
 	"kamenridercraft:gashacon_bugvisor_ii_chronos",
 	"kamenridercraft:gashacon_bugvisor_ii_poppy",
 	"kamenridercraft:paradoxbelt",
-	"kamenridercraft:gashacon_bugvisor_graphite",
+	"#tokudata:item_alias/gashacon_bugvisor_bugster",
 	"kamenridercraft:build_driver",
 	"kamenridercraft:build_driver_cross_z",
 	"kamenridercraft:build_driver_grease",
