@@ -1,0 +1,46 @@
+{
+  "criteria": {
+	"1": {
+	  "trigger": "minecraft:inventory_changed",
+	  "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "tokudata:installed/kamenridercraft"
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "tokudata:rider/detransformed"
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "feet": {
+			  "items": "kamenridercraft:goukidriver",
+                  "predicates": {
+                    "minecraft:custom_data": "{Update_form:1b}"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "items": [
+          {
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+	"function": "tokudata:transform/rider/gouki"
+  }
+}
