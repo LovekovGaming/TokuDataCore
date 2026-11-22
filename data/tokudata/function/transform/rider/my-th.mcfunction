@@ -18,13 +18,15 @@ execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenr
 # execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_12"}] run scoreboard players set @s toku.form1 11
 # execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_1_origin"}] run scoreboard players set @s toku.form1 12
 execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_1_en_my_th"}] run scoreboard players set @s toku.form1 13
-# execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:upgrade_form"}] run scoreboard players set @s toku.form1 14
-# execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:super_form"}] run scoreboard players set @s toku.form1 15
-# execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:final_form"}] run scoreboard players set @s toku.form1 16
-# execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:movie_form"}] run scoreboard players set @s toku.form1 17
-execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:harinezumi_seed_x_egg"}] run scoreboard players set @s toku.form1 18
-execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:zou_seed_x_egg"}] run scoreboard players set @s toku.form1 19
-# execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:hyper_battle_form"}] run scoreboard players set @s toku.form1 20
+# execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_5_rising"}] run scoreboard players set @s toku.form1 14
+# execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_5_heavy"}] run scoreboard players set @s toku.form1 15
+# execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:ride_x_eggs_4_rising"}] run scoreboard players set @s toku.form1 16
+# execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:super_form"}] run scoreboard players set @s toku.form1 17
+# execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:final_form"}] run scoreboard players set @s toku.form1 18
+# execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:movie_form"}] run scoreboard players set @s toku.form1 19
+execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:harinezumi_seed_x_egg"}] run scoreboard players set @s toku.form1 20
+execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:zou_seed_x_egg"}] run scoreboard players set @s toku.form1 21
+# execute if items entity @s armor.feet *[minecraft:custom_data~{slot_tex1:"kamenridercraft:hyper_battle_form"}] run scoreboard players set @s toku.form1 22
 scoreboard players operation Form_Difference toku.form1 -= @s toku.form1
 function #tokudata:post_check/rider/my-th
 advancement grant @s only tokudata:hooks/transform
